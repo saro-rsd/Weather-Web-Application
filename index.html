@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="weather-card">
+            <div class="header">
+                <h2>Weather Application</h2>
+                <div class="live-dot">
+                    <span class="live-dot"></span>
+                    <span>Live Data</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot locationIcon"></i>
+                <input type="text" placeholder="Search city..." autocomplete="off">
+                <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                <div id="suggestions"></div>
+            </div>
+
+            <div class="weather-info">
+                <div class="weatherHeroImg">
+                    <img src="images/icon1.png" alt="Weather Icon" id="icon">
+                </div>
+
+                <div class="weatherInfoHero">
+                    <h2 id="cityName">Colombo, Sri Lanka</h2>
+                    <h1 id="temp">30°C</h1>
+                    <p id="condition">Clear Sky</p>
+                    <div class="heroCards">
+                        <div class="heroDetailCard">
+                            <img src="images/feels.webp" class="weatherHeroIcon">
+                            <div>
+                                <p class="heroCardp">Feels Like</p>
+                                <span id="feelsLike">31°C</span>
+                            </div>
+                        </div>
+
+                        <div class="heroDetailCard">
+                            <img src="images/weather.webp" class="weatherHeroIcon">
+                            <div>
+                                <p class="heroCardp">Humadity</p>
+                                <span id="feelsLike">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="detail-card">
+                        <img src="images/wind.webp" class="detailCardIcon">
+                        <div class="detailCardInfo">
+                            <p>Wind Speed</p>
+                            <span id="wind">10 km/h</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="images/pressure.webp" class="detailCardIcon">
+                        <div class="detailCardInfo">
+                            <p>Pressure</p>
+                            <span id="pressure">1009 hpa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-section">
+                    <div id="forecast">
+
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p id="lastUpdate">Last Updated : </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 
     <script src="JS/app.js"></script>
 </body>
+
 </html>
