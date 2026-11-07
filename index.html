@@ -33,7 +33,7 @@
 
             <div class="search-box">
                 <i class="fa-solid fa-location-dot locationIcon"></i>
-                <input type="text" placeholder="Search City..." autocomplete="off" id="searchInput">
+                <input type="text" placeholder="Search City..." autocomplete="off" id="city">
                 <i class="fa-solid fa-magnifying-glass searchIcon"></i>
                 <div id="suggestions"></div>
             </div>
@@ -44,7 +44,10 @@
                 </div>
 
                 <div class="weatherInfoHero">
-                    <h2 id="cityName">Colombo, Sri Lanka</h2>
+                    <h2 id="cityName">
+                        <span id="town">Colombo,</span>
+                        <span id="country">Sri Lanka</span>
+                    </h2>
                     <h1 id="temp">30°C</h1>
                     <p id="condition">Clear Sky</p>
                     <div class="heroCards">
