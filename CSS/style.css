@@ -20,7 +20,7 @@ body::after {
     z-index: -1;
 }
 
-.video-background{
+.background-video{
     position: fixed;
     top: 0;
     left: 0;
