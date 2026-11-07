@@ -10,8 +10,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/background.jpg');
-    background-size: cover;
 }
 
 body::after {
@@ -33,7 +31,7 @@ body::after {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.179);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -47,6 +45,20 @@ body::after {
     margin-bottom: 10px;
 }
 
+.title1 {
+    color: #fdfffe;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title2 {
+    color: #0900b9;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .live-status {
     display: inline-flex;
     align-items: center;
@@ -58,7 +70,7 @@ body::after {
 .live-dot {
     width: 12px;
     height: 12px;
-    background: #22c55e;
+    background: #3fea7e;
     position: relative;
     border-radius: 50%;
     animation: breath 1.8s ease-in-out infinite;
@@ -69,8 +81,13 @@ body::after {
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background: rgba(34, 197, 94, 0.45);
+    background: rgba(44, 249, 119, 0.45);
     animation: pluse 1.8s ease-out infinite;
+}
+
+.live-text {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
 }
 
 @keyframes breath {
@@ -198,6 +215,7 @@ body::after {
     font-size: 16px;
     margin-top: -5px;
     margin-bottom: 20px;
+    color: #fcfeff;
 }
 
 .weatherHeroIcon {
@@ -281,7 +299,7 @@ body::after {
 .detailCardInfo {
     width: 90px !important;
     text-align: left;
-    padding:20px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .detailCardInfo p {
@@ -337,5 +355,5 @@ body::after {
 }
 
 #lastUpdate {
-    color: gray;
+    color: rgb(255, 255, 255);
 }
